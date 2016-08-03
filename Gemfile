@@ -54,11 +54,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'figaro'
 gem 'unicorn'
+
 group :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'email_spec'
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '~> 3.1'
   gem 'selenium-webdriver'
 end
 
