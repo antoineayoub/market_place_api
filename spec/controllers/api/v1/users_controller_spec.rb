@@ -96,7 +96,7 @@ RSpec.describe Api::V1::UsersController, type: :controller do
   describe "DELETE #destroy" do
     before(:each) do
       @user = FactoryGirl.create :user
-      delete :destroy, { id: @user.id }, format: :json
+      delete :destroy, params: { id: @user.id }, format: :json
     end
 
     it { should respond_with 204 }
